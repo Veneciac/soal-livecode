@@ -1,0 +1,45 @@
+/**
+Reverse Odd
+Implementasikan function reverseOdd untuk membalikkan setiap elemen string dengan urutan genap
+yang ada di dalamnya.
+Contoh:
+- input: ['awtian', 'raijin', 'thunderkeg']
+  output: ['awtian', 'nijiar', 'thunderkeg']
+- input: ['alisa', 'xiaoyu', 'nina', 'lili']
+  output: ['alisa', 'uyoaix', 'nina', 'ilil']
+- input: []
+  output: []
+Aturan coding:
+WAJIB MENYERTAKAN ALGORITHMA ATAU PSEUDOCODE
+Dilarang menggunakan built-in function:
+- .map()
+- .filter()
+- .reduce()
+- .reverse()
+- .split()
+- .join()
+*/
+
+function reverseEven (arr) {
+  var result = []
+  var a='';
+  for (var i = 0 ; i <arr.length ; i++){
+   if ( var i = 1 ){
+      for(var j =arr[1].length-1; j>=0; j-- ){
+        a+= arr[1]
+      }
+   }else {
+     result.push(arr[i])
+   }
+  }
+  return result
+}
+
+console.log(reverseEven(['clinkz', 'jahrakal', 'kael']));
+// [ 'clinkz', 'lakarhaj', 'kael' ]
+
+// console.log(reverseEven(['moonfang', 'nightshade', 'lightbringer', 'strygwyr']));
+// // [ 'moonfang', 'edahsthgin', 'lightbringer', 'rywgyrts' ]
+
+// console.log(reverseEven([]));
+// // []
