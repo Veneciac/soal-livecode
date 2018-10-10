@@ -32,7 +32,7 @@ END of loop
 RETURN index 1 of numbers 
 
 */
-
+//CARA SATU
 function secondLargest(numbers) {
   for(let i = 0; i < numbers.length; i++){
         var tampung = 0
@@ -45,6 +45,28 @@ function secondLargest(numbers) {
         }
   }
   return numbers[1]
+}
+
+
+// CARA DUA
+function secondLargest(numbers) {
+  var max = numbers[0]
+  var secmax = 0
+
+  for (var i =1; i< numbers.length ; i++){
+    if(max < numbers[i]){
+      max = numbers[i]
+    }
+  }
+  
+  for (var i =0 ; i < numbers.length ; i++){
+    if (numbers[i] < max){
+      if (secmax < numbers[i]){
+        secmax = numbers[i]
+      }
+    }
+  }
+  return secmax
 }
 
 // TEST CASES
