@@ -17,8 +17,37 @@
   - HEIGHT MINIMUM ADALAH 4, JIKA KURANG DARI 4 MAKA RETURN `Minimum height is 4`
 
 **/
+
 function halfTriangle(height, direction) {
-  // your code here
+  var result = []
+
+  if ( height < 4 ){
+    return 'Minimum height is 4'
+  }
+
+  for (var i = 1; i <= height ; i++){
+    var arrayKecil = []
+
+    for (var j = 1; j <= height ; j++){
+
+      if (direction == 'up'){
+        if (j< i){
+          arrayKecil.push(' ')
+        } else {
+          arrayKecil.push(String(j))
+        }
+      }
+      if (direction == 'down'){
+        if (j<=i){
+         arrayKecil.push(String(j))
+        } else {
+          arrayKecil.push(' ')
+        }
+      }
+    }
+    result.push(arrayKecil)
+  }
+  return result
 }
 
 console.log(halfTriangle(5, 'up'));
